@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>履约系统(OFC)架构设计</title>
+    <link href="/2024/01/22/%E5%B1%A5%E7%BA%A6%E7%B3%BB%E7%BB%9F%E5%BB%BA%E8%AE%BE%E8%B7%AF%E5%BE%84/"/>
+    <url>/2024/01/22/%E5%B1%A5%E7%BA%A6%E7%B3%BB%E7%BB%9F%E5%BB%BA%E8%AE%BE%E8%B7%AF%E5%BE%84/</url>
+    
+    <content type="html"><![CDATA[<p>在供应链领域，OFC系统扮演着承上启下的重要角色。对上承接各各类订单，对下派发生产任务，是履约链路上的核心系统，除此之外，OFC还负责管理生产、履约环节的关键信息，保障上下游系统能及时感知业务变化。</p><h2 id="流程分析"><a href="#流程分析" class="headerlink" title="流程分析"></a>流程分析</h2><p>概括而言，一次网购交易包括：<br>注册 -&gt; 导购 -&gt; 加购 -&gt; 提单 -&gt; 支付 -&gt; 接单 -&gt; 计划 -&gt; 调度 -&gt; 生产 -&gt; 配送 -&gt; 完成 -&gt; 售后<br>OFC在电商交易中一般负责接单、计划、调度三个环节</p><h2 id="架构重点"><a href="#架构重点" class="headerlink" title="架构重点"></a>架构重点</h2><p>OFC的核心架构目标是保障履约顺利达成，同时兼顾低成本、高时效等通用业务目标。因此，架构设计重点关注两个问题：</p><ul><li>稳定性：稳定履约是业务团队对OFC最低限度的诉求。OFC作为履约流程的”指挥员”，对上承接渠道网关、交易系统的流量，对下需协调财务、库存、仓储等基础系统，任何环节出错均可能阻断履约，造成卡单</li><li>迭代质效：完成履约基建的建设后，OFC需持续集成运营策略，提升系统吞吐，覆盖更多履约场景。因此，需求迭代的质效是OFC重点关注的另一个问题</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术总结</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>交易履约</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2024/01/22/hello-world/"/>
     <url>/2024/01/22/hello-world/</url>
