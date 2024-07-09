@@ -16,22 +16,22 @@
   <meta name="author" content="XD.Wang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="在供应链领域，OFC系统扮演着承上启下的重要角色。对上承接各各类订单，对下派发生产任务，是履约链路上的核心系统，除此之外，OFC还负责管理生产、履约环节的关键信息，保障上下游系统能及时感知业务变化。">
+    <meta name="description" content="验证和开拓市场是创业的第一步，核心动作在于定义、分析市场，并做好营销">
 <meta property="og:type" content="article">
-<meta property="og:title" content="履约系统(OFC)架构设计">
-<meta property="og:url" content="https://xiandui-wang.github.io/2024/01/22/%E5%B1%A5%E7%BA%A6%E7%B3%BB%E7%BB%9F%E5%BB%BA%E8%AE%BE%E8%B7%AF%E5%BE%84/index.html">
+<meta property="og:title" content="新业务市场分析">
+<meta property="og:url" content="https://xiandui-wang.github.io/2024/01/22/%E6%96%B0%E4%B8%9A%E5%8A%A1%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/index.html">
 <meta property="og:site_name" content="XD.Wang的技术空间">
-<meta property="og:description" content="在供应链领域，OFC系统扮演着承上启下的重要角色。对上承接各各类订单，对下派发生产任务，是履约链路上的核心系统，除此之外，OFC还负责管理生产、履约环节的关键信息，保障上下游系统能及时感知业务变化。">
+<meta property="og:description" content="验证和开拓市场是创业的第一步，核心动作在于定义、分析市场，并做好营销">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-22T08:21:11.541Z">
-<meta property="article:modified_time" content="2024-06-24T02:08:02.011Z">
+<meta property="article:published_time" content="2024-01-22T09:13:47.220Z">
+<meta property="article:modified_time" content="2024-06-24T02:59:31.218Z">
 <meta property="article:author" content="XD.Wang">
-<meta property="article:tag" content="交易履约">
+<meta property="article:tag" content="商分笔记">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>履约系统(OFC)架构设计 - XD.Wang的技术空间</title>
+  <title>新业务市场分析 - XD.Wang的技术空间</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="履约系统(OFC)架构设计"></span>
+            <span id="subtitle" data-typed-text="新业务市场分析"></span>
           
         </div>
 
@@ -208,7 +208,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-22 16:21" pubdate>
+        <time datetime="2024-01-22 17:13" pubdate>
           2024年1月22日 下午
         </time>
       </span>
@@ -220,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          349 字
+          573 字
         
       </span>
     
@@ -231,7 +231,7 @@
         
         
         
-          3 分钟
+          5 分钟
         
       </span>
     
@@ -268,18 +268,16 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">履约系统(OFC)架构设计</h1>
+            <h1 id="seo-header">新业务市场分析</h1>
             
             
               <div class="markdown-body">
                 
-                <p>在供应链领域，OFC系统扮演着承上启下的重要角色。对上承接各各类订单，对下派发生产任务，是履约链路上的核心系统，除此之外，OFC还负责管理生产、履约环节的关键信息，保障上下游系统能及时感知业务变化。</p>
-<h2 id="流程分析"><a href="#流程分析" class="headerlink" title="流程分析"></a>流程分析</h2><p>概括而言，一次网购交易包括：<br>注册 -&gt; 导购 -&gt; 加购 -&gt; 提单 -&gt; 支付 -&gt; 接单 -&gt; 计划 -&gt; 调度 -&gt; 生产 -&gt; 配送 -&gt; 完成 -&gt; 售后<br>OFC在电商交易中一般负责接单、计划、调度三个环节</p>
-<h2 id="架构重点"><a href="#架构重点" class="headerlink" title="架构重点"></a>架构重点</h2><p>OFC的核心架构目标是保障履约顺利达成，同时兼顾低成本、高时效等通用业务目标。因此，架构设计重点关注两个问题：</p>
-<ul>
-<li>稳定性：稳定履约是业务团队对OFC最低限度的诉求。OFC作为履约流程的”指挥员”，对上承接渠道网关、交易系统的流量，对下需协调财务、库存、仓储等基础系统，任何环节出错均可能阻断履约，造成卡单</li>
-<li>迭代质效：完成履约基建的建设后，OFC需持续集成运营策略，提升系统吞吐，覆盖更多履约场景。因此，需求迭代的质效是OFC重点关注的另一个问题</li>
-</ul>
+                <p>1、如何定义市场<br>2、使用PMF做分析<br>3、做好营销  </p>
+<h2 id="如何定义市场"><a href="#如何定义市场" class="headerlink" title="如何定义市场"></a>如何定义市场</h2><p>市场的概念：所谓市场值得是满足了<strong>某类人或组织</strong>的<strong>某个需求</strong>。定义市场时不能忽略组织，因为组织是付费的主力军。举个例子，目前Windows的大多数付费都来自企业。<br>在定义市场前，需要了解市场的两个特点：动态性和模糊性。所谓动态性，指的是需求可能没变，但满足需求的方式变了。典型案例：拍摄市场，从胶卷相机过渡到手机。所以需要明白，当满足需求的方式变了后，市场就变了。所谓模糊性，指的是市场不是固定的，会随着社会变化发生解构和融合。<br>了解这两个特点后，接下来需要深层次理解需求，搞清楚逻辑，把握颗粒度和精准度，颗粒度典型案例：理想汽车，精准度典型案例：博客<br>最后一步是给我们的市场定义计算TAM，切记不能过于乐观，要客观可推敲</p>
+<h2 id="使用PMF做分析"><a href="#使用PMF做分析" class="headerlink" title="使用PMF做分析"></a>使用PMF做分析</h2><p>PMF的核心是搞清楚如何用产品去匹配市场。常见的PMF有三类，产品创造市场，产品挤兑市场，产品适配市场。<br>产品创造市场：通过新技术创造市场。一般是技术革新推动的，比如手机之前拍照能力差，无法动摇胶卷相机，但当手机拍照能力跟上相机后，就会产生一个新的市场<br>产品挤兑市场：通过更低的成本去动摇老市场。<br>产品适配市场：通过更好的服务区动摇老市场中的细分领域。</p>
+<h2 id="做好营销"><a href="#做好营销" class="headerlink" title="做好营销"></a>做好营销</h2><p>产品做的好，营销做不好会影响市场抢占的速度，最终竞争失败。</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>交易的三要素是：流量、供给、履约<br>流量的组织形式大体分为两种，店铺和商品。店铺组织形式代表了一类客群的消费主张，典型的就是淘宝天猫；商品组织形式容易产生爆品，以此聚集流量利于优化供应链，典型的就是拼多多。</p>
 
                 
               </div>
@@ -298,7 +296,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/" class="category-chain-item">技术总结</a>
+  <a href="/categories/%E5%95%86%E4%B8%9A%E5%88%86%E6%9E%90/" class="category-chain-item">商业分析</a>
   
   
 
@@ -313,7 +311,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E4%BA%A4%E6%98%93%E5%B1%A5%E7%BA%A6/" class="print-no-link">#交易履约</a>
+        <a href="/tags/%E5%95%86%E5%88%86%E7%AC%94%E8%AE%B0/" class="print-no-link">#商分笔记</a>
       
     </div>
   
@@ -325,8 +323,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>履约系统(OFC)架构设计</div>
-      <div>https://xiandui-wang.github.io/2024/01/22/履约系统建设路径/</div>
+      <div>新业务市场分析</div>
+      <div>https://xiandui-wang.github.io/2024/01/22/新业务市场分析/</div>
     </div>
     <div class="license-meta">
       
@@ -370,9 +368,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/01/22/%E6%96%B0%E4%B8%9A%E5%8A%A1%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/" title="新业务市场分析">
+                      <a href="/2024/06/24/%E8%AE%A2%E5%8D%95%E9%A2%86%E5%9F%9F%E5%BB%BA%E8%AE%BE/" title="订单系统(OFC)架构设计">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">新业务市场分析</span>
+                        <span class="hidden-mobile">订单系统(OFC)架构设计</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -380,8 +378,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/01/22/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2024/01/22/%E5%B1%A5%E7%BA%A6%E7%B3%BB%E7%BB%9F%E5%BB%BA%E8%AE%BE%E8%B7%AF%E5%BE%84/" title="履约系统(OFC)架构设计">
+                        <span class="hidden-mobile">履约系统(OFC)架构设计</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
